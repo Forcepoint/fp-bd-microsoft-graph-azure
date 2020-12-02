@@ -1,0 +1,33 @@
+app_id: e2273992-d4ae-423b-81d9-8482c3623b15
+app_secret: BI3Sur:cl:GAc/zjG4gS_zAztWNBP2u1
+tenant_name: bzforcepoint.onmicrosoft.com
+resource: https://graph.microsoft.com
+logs_endpoint: https://graph.microsoft.com/v1.0/auditLogs/signIns
+application_directory: /var/azure_fba
+logs_directory: /var/azure_fba/logs
+microsoft_login: https://login.microsoftonline.com
+kafka_directory: /usr/local/kafka
+logs_topic_name: AZURE-FBA-LOGS
+risk_level_topic_name: FBA-RISK-LEVEL
+kafka_bootstrap_server: localhost:9092
+fba_consumer_group_name: fba-service
+user_consumer_group_name: user-service
+risk_level_consumer_group: risk-level-service-5
+user_service_ip: 127.0.0.1
+user_service_port: 5000
+fba_events_end_point: api-iamlab.wbsntest.net
+rose_api_host_name: rose-iamlab.wbsntest.net
+mds1_api_host_name: mds1-iamlab.wbsntest.net
+fba_kafka_bootstrap_server: kafka-iamlab.wbsntest.net:9093
+fba_kafka_topic_name: ENTITY_RISK_LEVEL
+fba_kafka_consumer_group_name: azure_fba_consumer
+ssl_ca_location: /var/azure_fba/key_store/client-ca.cer
+ssl_certificate_location: /var/azure_fba/key_store/client.cer
+ssl_key_location: /var/azure_fba/key_store/client.key
+key_store_pass:  changeme
+risk_level_groups_name:
+  risk_level_one: risk_level_one
+  risk_level_two: risk_level_two
+  risk_level_three: risk_level_three
+  risk_level_four: risk_level_four
+  risk_level_five: risk_level_five
